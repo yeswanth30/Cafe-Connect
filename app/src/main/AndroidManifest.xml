@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/coffee_logo"
+        android:label="Saksham's Coffee"
+        android:roundIcon="@drawable/coffee_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Coffeeshop"
+        tools:targetApi="31">
+        <activity
+            android:name=".screenflash"
+            android:exported="true"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".addproduct"></activity>
+        <activity android:name=".signup"></activity>
+        <activity android:name=".login"></activity>
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".mycart"></activity>
+        <activity android:name=".paymentpage"></activity>
+
+    </application>
+
+</manifest>

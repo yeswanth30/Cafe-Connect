@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:layout_marginTop="60dp"
+            android:id="@+id/layout1">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="      My Account"
+                android:textSize="50dp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:id="@+id/layout2"
+            android:layout_below="@id/layout1">
+
+            <ImageView
+                android:id="@+id/photo"
+                android:layout_width="150dp"
+                android:layout_marginLeft="120dp"
+                android:layout_height="180dp"
+                android:src="@drawable/saksham"
+                tools:layout_editor_absoluteX="124dp"
+                tools:layout_editor_absoluteY="117dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:id="@+id/layout3"
+            android:layout_below="@+id/layout2">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="400dp"
+                android:layout_height="50dp"
+                android:textAlignment="center"
+                android:text="  Account Name - Saksham Jain"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:id="@+id/layout4"
+            android:layout_below="@+id/layout3">
+
+            <TextView
+                android:layout_width="400dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="60dp"
+                android:text="Account Id        - SJ001"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:id="@+id/layout5"
+            android:layout_below="@+id/layout4">
+
+            <TextView
+                android:layout_width="400dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="60dp"
+                android:text="Address             - Agra"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:id="@+id/layout6"
+            android:layout_below="@+id/layout5">
+
+            <TextView
+                android:layout_width="400dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="60dp"
+                android:text="Email - saksham.jain@capace.co.in"
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:id="@+id/layout7"
+            android:layout_below="@+id/layout6">
+
+            <TextView
+                android:layout_width="400dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="60dp"
+                android:text="Membership Type - Premium"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:id="@+id/layout8"
+            android:layout_below="@+id/layout7">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="LOGOUT"
+                android:id="@+id/logout"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
